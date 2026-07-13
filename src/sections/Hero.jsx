@@ -1,5 +1,6 @@
 import heroImage from "../assets/Hero.png";
 import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 export default function Hero() {
   return (
@@ -28,15 +29,16 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <HashLink smooth to="#projects" className="primary-btn">
-              Explore Projects
-              <FaArrowRight />
-            </HashLink>
+           <HashLink smooth to="/#projects" className="primary-btn">
+  Explore Projects
+  <FaArrowRight />
+</HashLink>
+            
 
-            <HashLink smooth to="#services" className="secondary-btn">
-              <FaPhoneAlt />
-              Our Services
-            </HashLink>
+           <HashLink smooth to="/#services" className="secondary-btn">
+  <FaPhoneAlt />
+  Our Services
+</HashLink>
           </div>
 
         </div>

@@ -5,8 +5,8 @@ export default function Header() {
   return (
     <header className="header">
 
-      <div className="logo">
-        <HashLink smooth to="/#top">
+      <div >
+        <HashLink smooth to="/#top" className="logo">
         <img src={logo} alt="Sunshine Construction" />
 
         <div className="logo-text">
