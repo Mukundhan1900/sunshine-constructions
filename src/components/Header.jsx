@@ -6,12 +6,14 @@ export default function Header() {
     <header className="header">
 
       <div className="logo">
+        <HashLink smooth to="/#top">
         <img src={logo} alt="Sunshine Construction" />
 
         <div className="logo-text">
           <h2>Sunshine Construction</h2>
           <span>Building Your Dream</span>
         </div>
+        </HashLink>
       </div>
 
       <nav className="nav-menu">

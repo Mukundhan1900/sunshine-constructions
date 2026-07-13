@@ -28,18 +28,15 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#projects" className="primary-btn">
+            <HashLink smooth to="#projects" className="primary-btn">
               Explore Projects
               <FaArrowRight />
-            </a>
+            </HashLink>
 
-            <a
-              href="#services"
-              className="secondary-btn"
-            >
+            <HashLink smooth to="#services" className="secondary-btn">
               <FaPhoneAlt />
               Our Services
-            </a>
+            </HashLink>
           </div>
 
         </div>

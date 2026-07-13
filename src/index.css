@@ -573,55 +573,62 @@ to{
   margin-top: 2px;
 }
 
+/* ===========================
+   MOBILE
+=========================== */
+
 @media (max-width:768px){
 
-.header{
+  .header{
     display:flex;
     flex-direction:column;
     align-items:center;
     gap:18px;
     padding:20px;
-}
+  }
 
-/* Logo */
+  /* Logo */
 
-.logo{
+  .logo{
     order:1;
-}
+    justify-content:center;
+    width:100%;
+  }
 
-/* Menu */
+  .logo a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+  }
 
-.nav-menu{
+  /* Hide Navigation */
+
+  .nav-menu{
+    display:none;
+  }
+
+  /* Contact Button */
+
+  .header-right{
     order:2;
-
-    display:flex;
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:15px;
-
     width:100%;
-}
-
-/* Contact Button */
-
-.header-right{
-    order:3;
-
-    width:100%;
-
     display:flex;
-
     justify-content:center;
+  }
 
-    margin-top:10px;
-}
-
-.quote-btn{
+  .quote-btn{
     width:220px;
     text-align:center;
-}
+  }
+
+  .logo-text h2{
+    font-size:18px;
+  }
+
+  .logo-text span{
+    font-size:11px;
+  }
 
 }
 .whatsapp {
