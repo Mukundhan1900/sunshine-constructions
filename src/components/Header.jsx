@@ -1,67 +1,42 @@
 import logo from "../assets/logo.jpg";
+import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
   return (
-   <header className="header">
+    <header className="header">
 
+      <div className="logo">
+        <img src={logo} alt="Sunshine Construction" />
 
+        <div className="logo-text">
+          <h2>Sunshine Construction</h2>
+          <span>Building Your Dream</span>
+        </div>
+      </div>
 
-  <a href="#top" className="logo">
+      <nav className="nav-menu">
+        <HashLink smooth to="/#stats">Statistics</HashLink>
 
-    <img src={logo} alt="Sunshine Construction" />
+        <HashLink smooth to="/#projects">Projects</HashLink>
 
+        <HashLink smooth to="/#services">Services</HashLink>
 
+        <HashLink smooth to="/#process">Process</HashLink>
 
-    <div className="logo-text">
+        <HashLink smooth to="/#mission">Client Reviews</HashLink>
+      </nav>
 
-      <h2>Sunshine Construction</h2>
+      <div className="header-right">
+        <a
+          href="https://wa.me/918903311111"
+          className="quote-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Contact Us
+        </a>
+      </div>
 
-      <span>Building Your Dream</span>
-
-    </div>
-
-  </a>
-
-
-
-  <nav className="nav-menu">
-
-    <a href="#stats">Statistics</a>
-
-    <a href="#projects">Projects</a>
-
-    <a href="#services">Services</a>
-
-    <a href="#process">Process</a>
-
-    <a href="#mission">Client Reviews</a>
-
-  </nav>
-
-
-
-  <div className="header-right">
-
-    <a
-
-      href="https://wa.me/918903311111"
-
-      className="quote-btn"
-
-      target="_blank"
-
-      rel="noreferrer"
-
-    >
-
-      Contact Us
-
-    </a>
-
-  </div>
-
-
-
-</header>
+    </header>
   );
 }
